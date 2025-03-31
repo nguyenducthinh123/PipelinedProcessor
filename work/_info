@@ -1,0 +1,484 @@
+m255
+K4
+z2
+!s11f vlog 2020.4 2020.10, Oct 13 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/modeltech64_2020.4/examples
+vALU
+Z0 !s110 1743395197
+!i10b 1
+!s100 SOdUDEG4^[ZEERWA9Bec:3
+Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
+Iojf^76;NGnLJ2F:1l<gmP0
+Z2 dD:/Verilog/RISCV
+Z3 w1743393552
+8ALU.v
+FALU.v
+!i122 15
+Z4 L0 15 26
+Z5 VDg1SIo80bB@j0V0VzS_@n1
+Z6 OL;L;2020.4;71
+r1
+!s85 0
+31
+Z7 !s108 1743395196.000000
+Z8 !s107 Hazard_unit.v|Data_Memory.v|ALU.v|Sign_Extend.v|Register_File.v|Main_Decoder.v|ALU_Decoder.v|Control_Unit_Top.v|Instruction_Memory.v|Mux.v|PC_Adder.v|PC.v|Writeback_Cycle.v|Memory_Cycle.v|Execute_Cycle.v|Decode_Cyle.v|Fetch_Cycle.v|D:/Verilog/RISCV/Pipeline_Top.v|
+Z9 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/Verilog/RISCV/Pipeline_Top.v|
+!i113 0
+Z10 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z11 tCvgOpt 0
+n@a@l@u
+vALU_Decoder
+R0
+!i10b 1
+!s100 562HAQO[iI_fW?4b;ADzT3
+R1
+I1gliB2Q1gKfEMY=R0::<Q3
+R2
+R3
+8ALU_Decoder.v
+FALU_Decoder.v
+!i122 15
+R4
+R5
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 0
+R10
+R11
+n@a@l@u_@decoder
+vControl_Unit_Top
+R0
+!i10b 1
+!s100 CJAHeo5QJjMV^X1<UUfUT2
+R1
+I[FDolOff]0_EWAnCRf?[o3
+R2
+R3
+8Control_Unit_Top.v
+FControl_Unit_Top.v
+!i122 15
+L0 18 31
+R5
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 0
+R10
+R11
+n@control_@unit_@top
+vData_Memory
+R0
+!i10b 1
+!s100 VHPI=fVN0eRcL:YWLZEfd3
+R1
+IC6[nTXUAo3Mb<?@P]?m1m1
+R2
+R3
+8Data_Memory.v
+FData_Memory.v
+!i122 15
+Z12 L0 15 23
+R5
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 0
+R10
+R11
+n@data_@memory
+vdecode_cycle
+R0
+!i10b 1
+!s100 aJP:YNA:CGANgnoaME[JU0
+R1
+I;iFnQG>mW0Sj;MXD70E]f1
+R2
+R3
+8Decode_Cyle.v
+FDecode_Cyle.v
+!i122 15
+L0 16 116
+R5
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 0
+R10
+R11
+vexecute_cycle
+R0
+!i10b 1
+!s100 :G]aK=IN`YQ;F15IET7j81
+R1
+I4CUIPnJd8`<GOJQYFldhT3
+R2
+R3
+8Execute_Cycle.v
+FExecute_Cycle.v
+!i122 15
+L0 15 105
+R5
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 0
+R10
+R11
+vfetch_cycle
+R0
+!i10b 1
+!s100 DR_:3If<D7k9DF`d_?4A]1
+R1
+IDj<kG:hZS5X_7eo^98@lC1
+R2
+R3
+8Fetch_Cycle.v
+FFetch_Cycle.v
+!i122 15
+L0 15 70
+R5
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 0
+R10
+R11
+vhazard_unit
+R0
+!i10b 1
+!s100 ne]8RFVBG`<5ahXg>;Kl53
+R1
+IeV=PL?jZ9WVIXPE[A7g>E0
+R2
+R3
+8Hazard_unit.v
+FHazard_unit.v
+!i122 15
+Z13 L0 15 16
+R5
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 0
+R10
+R11
+vInstruction_Memory
+R0
+!i10b 1
+!s100 [Me2K1UD6mgV:?anLbPYn2
+R1
+I[SNmM>APfI2Kgk]8YS>8_3
+R2
+R3
+8Instruction_Memory.v
+FInstruction_Memory.v
+!i122 15
+L0 15 27
+R5
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 0
+R10
+R11
+n@instruction_@memory
+vMain_Decoder
+R0
+!i10b 1
+!s100 FU]6i_SHG9mXM4IWm^>Zd3
+R1
+IZ_9QE<<2B;=ngaj7Qc[ii1
+R2
+R3
+8Main_Decoder.v
+FMain_Decoder.v
+!i122 15
+R12
+R5
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 0
+R10
+R11
+n@main_@decoder
+vmemory_cycle
+R0
+!i10b 1
+!s100 <`6^n::QLAHSFYze<kA0<2
+R1
+IzeQ5[DW8i60i:gnngD6>M0
+R2
+R3
+8Memory_Cycle.v
+FMemory_Cycle.v
+!i122 15
+L0 15 59
+R5
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 0
+R10
+R11
+vMux
+R0
+!i10b 1
+!s100 PVk:da:UOP6d:5eFbSCGB1
+R1
+I`?12@5N]kj7k`?d1b7iiO3
+R2
+R3
+Z14 8Mux.v
+Z15 FMux.v
+!i122 15
+Z16 L0 15 9
+R5
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 0
+R10
+R11
+n@mux
+vMux_3_by_1
+R0
+!i10b 1
+!s100 h]Y`Y<8iAE9H20mCeeh<c3
+R1
+IBgzL4=H`4G>m:fMzbVB^90
+R2
+R3
+R14
+R15
+!i122 15
+L0 25 8
+R5
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 0
+R10
+R11
+n@mux_3_by_1
+vPC_Adder
+R0
+!i10b 1
+!s100 hY^K`lFm2eTgg]<8AjWII3
+R1
+I8gQ@[JQ2C:1ao1BP6:@<W2
+R2
+R3
+8PC_Adder.v
+FPC_Adder.v
+!i122 15
+L0 15 8
+R5
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 0
+R10
+R11
+n@p@c_@adder
+vPC_Module
+R0
+!i10b 1
+!s100 H8g:`U;::B[QQO:a=?VaB1
+R1
+I4dY5Qn1<^<m_2HWn8Q1VV2
+R2
+R3
+8PC.v
+FPC.v
+!i122 15
+L0 15 14
+R5
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 0
+R10
+R11
+n@p@c_@module
+vPipeline_top
+R0
+!i10b 1
+!s100 PhZB66Q]0a83f?L`8O[RT3
+R1
+I6Z9BA;hMh1eENR9jLGnih0
+R2
+R3
+8D:/Verilog/RISCV/Pipeline_Top.v
+FD:/Verilog/RISCV/Pipeline_Top.v
+!i122 15
+L0 32 126
+R5
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 0
+R10
+R11
+n@pipeline_top
+vRegister_File
+R0
+!i10b 1
+!s100 BlA]b;?_i7:NL=KY;714L0
+R1
+IU7<YA`4R3MR0H_`TmE=H53
+R2
+R3
+8D:/Verilog/RISCV/Register_File.v
+FD:/Verilog/RISCV/Register_File.v
+!i122 16
+R12
+R5
+R6
+r1
+!s85 0
+31
+Z17 !s108 1743395197.000000
+!s107 D:/Verilog/RISCV/Register_File.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/Verilog/RISCV/Register_File.v|
+!i113 0
+R10
+R11
+n@register_@file
+vSign_Extend
+R0
+!i10b 1
+!s100 ]5EEW1aiGJhK<jMdfM=XN3
+R1
+IF@5U68EN[zil32OXR?ca82
+R2
+R3
+8D:/Verilog/RISCV/Sign_Extend.v
+FD:/Verilog/RISCV/Sign_Extend.v
+!i122 17
+R16
+R5
+R6
+r1
+!s85 0
+31
+R17
+!s107 D:/Verilog/RISCV/Sign_Extend.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/Verilog/RISCV/Sign_Extend.v|
+!i113 0
+R10
+R11
+n@sign_@extend
+vtb
+!s110 1743395196
+!i10b 1
+!s100 G4[W3ObdG:6Lol@F[JmOk1
+R1
+I]e^S3IPA6;7[58zLk3f<A1
+R2
+R3
+8D:/Verilog/RISCV/pipeline_tb.v
+FD:/Verilog/RISCV/pipeline_tb.v
+!i122 14
+L0 1 24
+R5
+R6
+r1
+!s85 0
+31
+R7
+!s107 D:/Verilog/RISCV/pipeline_tb.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/Verilog/RISCV/pipeline_tb.v|
+!i113 0
+R10
+R11
+vwriteback_cycle
+R0
+!i10b 1
+!s100 UCA]cC=dac[Hd?D^8Fj7W3
+R1
+IB8Y`2908;7hmX0jT8?5ha0
+R2
+R3
+8D:/Verilog/RISCV/Writeback_Cycle.v
+FD:/Verilog/RISCV/Writeback_Cycle.v
+!i122 18
+R13
+R5
+R6
+r1
+!s85 0
+31
+R17
+!s107 D:/Verilog/RISCV/Writeback_Cycle.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/Verilog/RISCV/Writeback_Cycle.v|
+!i113 0
+R10
+R11
