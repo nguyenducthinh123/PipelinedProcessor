@@ -1,0 +1,156 @@
+D:/Verilog/RISCV/PC_Adder.v {1 {vlog -work work -vopt -stats=none D:/Verilog/RISCV/PC_Adder.v
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module PC_Adder
+
+Top level modules:
+	PC_Adder
+
+} {} {}} D:/Verilog/RISCV/Mux.v {1 {vlog -work work -vopt -stats=none D:/Verilog/RISCV/Mux.v
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module Mux
+-- Compiling module Mux_3_by_1
+
+Top level modules:
+	Mux
+	Mux_3_by_1
+
+} {} {}} D:/Verilog/RISCV/Data_Memory.v {1 {vlog -work work -vopt -stats=none D:/Verilog/RISCV/Data_Memory.v
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module Data_Memory
+
+Top level modules:
+	Data_Memory
+
+} {} {}} D:/Verilog/RISCV/ALU.v {1 {vlog -work work -vopt -stats=none D:/Verilog/RISCV/ALU.v
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module ALU
+
+Top level modules:
+	ALU
+
+} {} {}} D:/Verilog/RISCV/Writeback_Cycle.v {1 {vlog -work work -vopt -stats=none D:/Verilog/RISCV/Writeback_Cycle.v
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module writeback_cycle
+
+Top level modules:
+	writeback_cycle
+
+} {} {}} D:/Verilog/RISCV/PC.v {1 {vlog -work work -vopt -stats=none D:/Verilog/RISCV/PC.v
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module PC_Module
+
+Top level modules:
+	PC_Module
+
+} {} {}} D:/Verilog/RISCV/Register_File.v {1 {vlog -work work -vopt -stats=none D:/Verilog/RISCV/Register_File.v
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module Register_File
+
+Top level modules:
+	Register_File
+
+} {} {}} D:/Verilog/RISCV/ALU_Decoder.v {1 {vlog -work work -vopt -stats=none D:/Verilog/RISCV/ALU_Decoder.v
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module ALU_Decoder
+
+Top level modules:
+	ALU_Decoder
+
+} {} {}} D:/Verilog/RISCV/Sign_Extend.v {1 {vlog -work work -vopt -stats=none D:/Verilog/RISCV/Sign_Extend.v
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module Sign_Extend
+
+Top level modules:
+	Sign_Extend
+
+} {} {}} D:/Verilog/RISCV/Pipeline_Top.v {1 {vlog -work work -vopt -stats=none D:/Verilog/RISCV/Pipeline_Top.v
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module fetch_cycle
+-- Compiling module decode_cycle
+-- Compiling module execute_cycle
+-- Compiling module memory_cycle
+-- Compiling module writeback_cycle
+-- Compiling module PC_Module
+-- Compiling module PC_Adder
+-- Compiling module Mux
+-- Compiling module Mux_3_by_1
+-- Compiling module Instruction_Memory
+-- Compiling module ALU_Decoder
+-- Compiling module Main_Decoder
+-- Compiling module Control_Unit_Top
+-- Compiling module Register_File
+-- Compiling module Sign_Extend
+-- Compiling module ALU
+-- Compiling module Data_Memory
+-- Compiling module hazard_unit
+-- Compiling module Pipeline_top
+
+Top level modules:
+	Pipeline_top
+
+} {} {}} D:/Verilog/RISCV/Memory_Cycle.v {1 {vlog -work work -vopt -stats=none D:/Verilog/RISCV/Memory_Cycle.v
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module memory_cycle
+
+Top level modules:
+	memory_cycle
+
+} {} {}} D:/Verilog/RISCV/Fetch_Cycle.v {1 {vlog -work work -vopt -stats=none D:/Verilog/RISCV/Fetch_Cycle.v
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module fetch_cycle
+
+Top level modules:
+	fetch_cycle
+
+} {} {}} D:/Verilog/RISCV/Hazard_unit.v {1 {vlog -work work -vopt -stats=none D:/Verilog/RISCV/Hazard_unit.v
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module hazard_unit
+
+Top level modules:
+	hazard_unit
+
+} {} {}} D:/Verilog/RISCV/Control_Unit_Top.v {1 {vlog -work work -vopt -stats=none D:/Verilog/RISCV/Control_Unit_Top.v
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module ALU_Decoder
+-- Compiling module Main_Decoder
+-- Compiling module Control_Unit_Top
+
+Top level modules:
+	Control_Unit_Top
+
+} {} {}} D:/Verilog/RISCV/Execute_Cycle.v {1 {vlog -work work -vopt -stats=none D:/Verilog/RISCV/Execute_Cycle.v
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module execute_cycle
+
+Top level modules:
+	execute_cycle
+
+} {} {}} D:/Verilog/RISCV/Instruction_Memory.v {1 {vlog -work work -vopt -stats=none D:/Verilog/RISCV/Instruction_Memory.v
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module Instruction_Memory
+
+Top level modules:
+	Instruction_Memory
+
+} {} {}} D:/Verilog/RISCV/Main_Decoder.v {1 {vlog -work work -vopt -stats=none D:/Verilog/RISCV/Main_Decoder.v
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module Main_Decoder
+
+Top level modules:
+	Main_Decoder
+
+} {} {}} D:/Verilog/RISCV/pipeline_tb.v {1 {vlog -work work -vopt -stats=none D:/Verilog/RISCV/pipeline_tb.v
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module fetch_cycle_tb
+
+Top level modules:
+	fetch_cycle_tb
+
+} {} {}} D:/Verilog/RISCV/Decode_Cyle.v {1 {vlog -work work -vopt -stats=none D:/Verilog/RISCV/Decode_Cyle.v
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module decode_cycle
+
+Top level modules:
+	decode_cycle
+
+} {} {}}
