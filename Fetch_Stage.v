@@ -1,4 +1,4 @@
-module fetch_cycle(clk, rst, PCSrcE, PCTargetE, InstrD, PCD, PCPlus4D);
+module Fetch_Stage(clk, rst, PCSrcE, PCTargetE, InstrD, PCD, PCPlus4D);
 
     // Declare input & outputs
     input clk, rst;

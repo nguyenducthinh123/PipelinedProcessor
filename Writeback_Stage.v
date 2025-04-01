@@ -1,4 +1,4 @@
-module writeback_cycle(clk, rst, ResultSrcW, PCPlus4W, ALU_ResultW, ReadDataW, ResultW);
+module Writeback_Stage(clk, rst, ResultSrcW, PCPlus4W, ALU_ResultW, ReadDataW, ResultW);
 
 // Declaration of IOs
 input clk, rst, ResultSrcW;

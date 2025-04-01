@@ -1,8 +1,8 @@
-`include "Fetch_Cycle.v"
-`include "Decode_Cyle.v"
-`include "Execute_Cycle.v"
-`include "Memory_Cycle.v"
-`include "Writeback_Cycle.v"    
+`include "Fetch_Stage.v"
+`include "Decode_Stage.v"
+`include "Execute_Stage.v"
+`include "Mem_Stage.v"
+`include "Writeback_Stage.v"    
 `include "PC.v"
 `include "PC_Adder.v"
 `include "Mux.v"
@@ -15,7 +15,7 @@
 `include "Hazard_unit.v"
 
 
-module Pipeline_top(clk, rst);
+module Pipeline_RISCV(clk, rst);
 
     // Declaration of I/O
     input clk, rst;
@@ -32,7 +32,7 @@ module Pipeline_top(clk, rst);
 
     // Module Initiation
     // Fetch Stage
-    fetch_cycle Fetch (
+    Fetch_Stage Fetch (
                         .clk(clk), 
                         .rst(rst), 
                         .PCSrcE(PCSrcE), 
@@ -43,7 +43,7 @@ module Pipeline_top(clk, rst);
                     );
 
     // Decode Stage
-    decode_cycle Decode (
+    Decode_Stage Decode (
                         .clk(clk), 
                         .rst(rst), 
                         .InstrD(InstrD), 
@@ -69,7 +69,7 @@ module Pipeline_top(clk, rst);
                     );
 
     // Execute Stage
-    execute_cycle Execute (
+    Execute_Stage Execute (
                         .clk(clk), 
                         .rst(rst), 
                         .RegWriteE(RegWriteE), 
@@ -99,7 +99,7 @@ module Pipeline_top(clk, rst);
                     );
     
     // Memory Stage
-    memory_cycle Memory (
+    Mem_Stage Memory (
                         .clk(clk), 
                         .rst(rst), 
                         .RegWriteM(RegWriteM), 
@@ -118,7 +118,7 @@ module Pipeline_top(clk, rst);
                     );
 
     // Write Back Stage
-    writeback_cycle WriteBack (
+    Writeback_Stage WriteBack (
                         .clk(clk), 
                         .rst(rst), 
                         .ResultSrcW(ResultSrcW), 
