@@ -9,7 +9,7 @@ module ALU(A,B,Result,ALUControl,OverFlow,Carry,Zero,Negative);
     wire [31:0]Sum;
 
     assign Sum = (ALUControl[0] == 1'b0) ? A + B :
-                                          (A + ((~B)+1)) ;
+                                          (A + ((~B)+1)) ; // A - B
     assign {Cout,Result} = (ALUControl == 3'b000) ? Sum :
                            (ALUControl == 3'b001) ? Sum :
                            (ALUControl == 3'b010) ? A & B :

@@ -93,7 +93,7 @@ module Execute_Stage(clk, rst, RegWriteE, ALUSrcE, MemWriteE, ResultSrcE, Branch
     end
 
     // Output Assignments
-    assign PCSrcE = ZeroE &  BranchE;
+    assign PCSrcE = ZeroE &  BranchE; // support beq only
     assign RegWriteM = RegWriteE_r;
     assign MemWriteM = MemWriteE_r;
     assign ResultSrcM = ResultSrcE_r;

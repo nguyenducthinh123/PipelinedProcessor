@@ -1,4 +1,11 @@
-D:/Verilog/RISCV/PC_Adder.v {1 {vlog -work work -vopt -stats=none D:/Verilog/RISCV/PC_Adder.v
+D:/Verilog/RISCV/ALU.v {1 {vlog -work work -vopt -stats=none D:/Verilog/RISCV/ALU.v
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module ALU
+
+Top level modules:
+	ALU
+
+} {} {}} D:/Verilog/RISCV/PC_Adder.v {1 {vlog -work work -vopt -stats=none D:/Verilog/RISCV/PC_Adder.v
 Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
 -- Compiling module PC_Adder
 
@@ -20,13 +27,6 @@ Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
 
 Top level modules:
 	Data_Memory
-
-} {} {}} D:/Verilog/RISCV/ALU.v {1 {vlog -work work -vopt -stats=none D:/Verilog/RISCV/ALU.v
-Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
--- Compiling module ALU
-
-Top level modules:
-	ALU
 
 } {} {}} D:/Verilog/RISCV/PC.v {1 {vlog -work work -vopt -stats=none D:/Verilog/RISCV/PC.v
 Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
@@ -95,13 +95,6 @@ Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
 Top level modules:
 	hazard_unit
 
-} {} {}} D:/Verilog/RISCV/Mem_Stage.v {1 {vlog -work work -vopt -stats=none D:/Verilog/RISCV/Mem_Stage.v
-Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
--- Compiling module Mem_Stage
-
-Top level modules:
-	Mem_Stage
-
 } {} {}} D:/Verilog/RISCV/Control_Unit_Top.v {1 {vlog -work work -vopt -stats=none D:/Verilog/RISCV/Control_Unit_Top.v
 Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
 -- Compiling module ALU_Decoder
@@ -111,6 +104,13 @@ Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
 Top level modules:
 	Control_Unit_Top
 
+} {} {}} D:/Verilog/RISCV/Main_Decoder.v {1 {vlog -work work -vopt -stats=none D:/Verilog/RISCV/Main_Decoder.v
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module Main_Decoder
+
+Top level modules:
+	Main_Decoder
+
 } {} {}} D:/Verilog/RISCV/Instruction_Memory.v {1 {vlog -work work -vopt -stats=none D:/Verilog/RISCV/Instruction_Memory.v
 Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
 -- Compiling module Instruction_Memory
@@ -118,12 +118,12 @@ Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
 Top level modules:
 	Instruction_Memory
 
-} {} {}} D:/Verilog/RISCV/Main_Decoder.v {1 {vlog -work work -vopt -stats=none D:/Verilog/RISCV/Main_Decoder.v
+} {} {}} D:/Verilog/RISCV/Mem_Stage.v {1 {vlog -work work -vopt -stats=none D:/Verilog/RISCV/Mem_Stage.v
 Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
--- Compiling module Main_Decoder
+-- Compiling module Mem_Stage
 
 Top level modules:
-	Main_Decoder
+	Mem_Stage
 
 } {} {}} D:/Verilog/RISCV/Fetch_Stage.v {1 {vlog -work work -vopt -stats=none D:/Verilog/RISCV/Fetch_Stage.v
 Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020

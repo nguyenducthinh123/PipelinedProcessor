@@ -6,7 +6,7 @@ module Instruction_Memory(rst,A,RD);
 
   reg [31:0] mem [1023:0];
   
-  assign RD = (rst == 1'b0) ? {32{1'b0}} : mem[A[31:2]];
+  assign RD = (rst == 1'b0) ? {32{1'b0}} : mem[A[31:2]]; // do mỗi lệnh 4 byte, để truy cập đúng cần chia địa chỉ byte cho 4
 
   initial begin
     $readmemh("memfile.hex",mem);
