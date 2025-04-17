@@ -22,7 +22,7 @@ module Fetch_Stage(clk, rst, PCSrcE, PCTargetE, InstrD, PCD, PCPlus4D);
                 .b(PCTargetE),
                 .s(PCSrcE),
                 .c(PC_F)
-                );
+                ); // PCTargetE means PC + offset
 
     // Declare PC Counter
     PC_Module Program_Counter (

@@ -13,7 +13,7 @@ module tb();
     // Clock generator
     always begin
         clk = ~clk;
-        #50;
+        #50;  // Clock period = 100ns
     end
     
     // Test sequence
@@ -26,16 +26,16 @@ module tb();
         rst = 1'b1;
         
         // Run long enough for all instructions to execute
-        // including the jump instruction (at least 20 cycles)
         #2000;
         
-        // Display register values to verify jump worked correctly
+        // Display register values to verify execution
         $display("Time=%0t: Simulation completed", $time);
-        $display("Register x1 (ra) = %h", dut.Decode.rf.Register[1]);  // Đã sửa
-        $display("Register x5 (t0) = %h", dut.Decode.rf.Register[5]);  // Đã sửa
-        $display("Register x6 (t1) = %h", dut.Decode.rf.Register[6]);  // Đã sửa
-        $display("Register x7 (t2) = %h", dut.Decode.rf.Register[7]);  // Đã sửa
-        $display("Register x10 (a0) = %h", dut.Decode.rf.Register[10]); // Đã sửa
+        $display("Register x5 (t0) = %h", dut.Decode.rf.Register[5]);  // x5 = 5
+        $display("Register x6 (t1) = %h", dut.Decode.rf.Register[6]);  // x6 = 3
+        $display("Register x7 (t2) = %h", dut.Decode.rf.Register[7]);  // x7 = x5 + x6 = 8
+        $display("Register x8 = %h", dut.Decode.rf.Register[8]);       // x8 = value loaded from memory
+        $display("Register x9 = %h", dut.Decode.rf.Register[9]);       // x9 = 1
+        $display("Register x10 (a0) = %h", dut.Decode.rf.Register[10]); // x10 = x8 + x9
         
         $finish;
     end
@@ -44,8 +44,8 @@ module tb();
     initial begin
         $monitor("Time=%0t, PC=%h, Instruction=%h", 
                 $time, 
-                dut.Fetch.PCD,    // Current PC in Fetch stage (Đã sửa)
-                dut.Decode.InstrD // Current instruction in Decode stage (Đã sửa)
+                dut.Fetch.PCD,    // Current PC in Fetch stage
+                dut.Decode.InstrD // Current instruction in Decode stage
                 );
     end
     

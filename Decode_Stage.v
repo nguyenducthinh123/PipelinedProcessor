@@ -3,7 +3,7 @@ module Decode_Stage(clk, rst, InstrD, PCD, PCPlus4D, RegWriteW, RDW, ResultW, Re
 
     // Declaring I/O
     input clk, rst, RegWriteW;
-    input [4:0] RDW; // Address of the register to be written back
+    input [4:0] RDW; // Địa chỉ của thanh ghi đích trong giai đoạn ghi
     input [31:0] InstrD, PCD, PCPlus4D, ResultW;
 
     output RegWriteE,ALUSrcE,MemWriteE,ResultSrcE,BranchE;
