@@ -1,58 +1,53 @@
-module tb();
+module pipeline_tb;
 
     // Clock and reset signals
     reg clk = 0;
     reg rst;
-    
-    // Instantiate the complete RISC-V pipeline processor
+
+    // Instantiate DUT
     Pipeline_RISCV dut (
         .clk(clk),
         .rst(rst)
     );
-    
-    // Clock generator
-    always begin
-        clk = ~clk;
-        #50;  // Clock period = 100ns
-    end
-    
-    // Test sequence
+
+    // Clock generator: 100ns cycle
+    always #50 clk = ~clk;
+
+    // Main test sequence
     initial begin
-        // Initialize with reset active
-        rst = 1'b0;
-        #200;
-        
-        // Release reset to start execution
-        rst = 1'b1;
-        
-        // Run long enough for all instructions to execute
-        #2000;
-        
-        // Display register values to verify execution
-        $display("Time=%0t: Simulation completed", $time);
-        $display("Register x5 (t0) = %h", dut.Decode.rf.Register[5]);  // x5 = 5
-        $display("Register x6 (t1) = %h", dut.Decode.rf.Register[6]);  // x6 = 3
-        $display("Register x7 (t2) = %h", dut.Decode.rf.Register[7]);  // x7 = x5 + x6 = 8
-        $display("Register x8 = %h", dut.Decode.rf.Register[8]);       // x8 = value loaded from memory
-        $display("Register x9 = %h", dut.Decode.rf.Register[9]);       // x9 = 1
-        $display("Register x10 (a0) = %h", dut.Decode.rf.Register[10]); // x10 = x8 + x9
-        
+        // Apply reset
+        rst = 0;
+        #100;
+        rst = 1;  // Release reset to start processor
+
+        // Wait enough cycles for all instructions to propagate through pipeline
+        #10000;
+
+        // Display key register values
+        $display("=== Simulation Results ===");
+        $display("x1  = %0d", dut.Decode.rf.Register[1]);   // x1 = 10
+        $display("x2  = %0d", dut.Decode.rf.Register[2]);   // x2 = 20
+        $display("x3  = %0d", dut.Decode.rf.Register[3]);   // x3 = x1 + x2 = 30
+        $display("x4  = %0d", dut.Decode.rf.Register[4]);   // x4 = x3 - x1 = 20
+        $display("x5  = %0d", dut.Decode.rf.Register[5]);   // x5 = 20
+        $display("x6  = %0d", dut.Decode.rf.Register[6]);   // x6 = 0 or 1 depending on beq
+        $display("x7  = %0d", dut.Decode.rf.Register[7]);   // x7 = 7 (label1)
+
         $finish;
     end
-    
-    // Monitor key signals for debugging
+
+    // Monitor PC + current instruction
     initial begin
-        $monitor("Time=%0t, PC=%h, Instruction=%h", 
-                $time, 
-                dut.Fetch.PCD,    // Current PC in Fetch stage
-                dut.Decode.InstrD // Current instruction in Decode stage
-                );
+        $monitor("Time = %0t | PC = %h | Instr = %h", 
+                 $time, 
+                 dut.Fetch.PCD, 
+                 dut.Decode.InstrD);
     end
-    
-    // Generate VCD file for waveform viewing
+
+    // Dump VCD waveform
     initial begin
-        $dumpfile("dump.vcd");
-        $dumpvars(0, tb);
+        $dumpfile("pipeline_tb.vcd");
+        $dumpvars(0, pipeline_tb);
     end
 
 endmodule
