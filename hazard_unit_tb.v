@@ -20,7 +20,7 @@ module hazard_unit_tb();
 
     // Test stimulus
     initial begin
-        // Khởi tạo các giá trị ban đầu
+        // Initial
         rst = 0;
         RegWriteM = 0;
         RegWriteW = 0;
@@ -29,7 +29,6 @@ module hazard_unit_tb();
         Rs1_E = 5'b00000;
         Rs2_E = 5'b00000;
 
-        // Reset
         #100;
         rst = 1;
 
@@ -55,13 +54,12 @@ module hazard_unit_tb();
         Rs2_E = 5'b00010;
         #100;
 
-        // Test case 4: Forward from both MEM and WB stages
+        // Test case 4: Forward from MEM stage to both Rs1_E and Rs2_E
         RegWriteM = 1;
-        RegWriteW = 1;
-        RD_M = 5'b00011; // MEM stage writes to Rs1_E
-        RD_W = 5'b00100; // WB stage writes to Rs2_E
+        RegWriteW = 0;
+        RD_M = 5'b00011; // MEM stage writes to Rs1_E and Rs2_E
         Rs1_E = 5'b00011;
-        Rs2_E = 5'b00100;
+        Rs2_E = 5'b00011;
         #100;
 
         // Test case 5: No forwarding due to reset

@@ -10,14 +10,15 @@ z2
 cModel Technology
 Z0 dC:/modeltech64_2020.4/examples
 T_opt
-!s110 1744935752
-VIIQWZL04lZS7[A`KDZ[3o2
+!s110 1744937410
+VYRWZF8VkiznUleFIf>n<P0
 04 14 4 work hazard_unit_tb fast 0
-=1-34735aa9af0f-68019b48-145-25a0
+=1-34735aa9af0f-6801a1c2-2df-5b44
 Z1 o-quiet -auto_acc_if_foreign -work work +acc
 Z2 tCvgOpt 0
 n@_opt
 Z3 OL;O;2020.4;71
+R0
 T_opt1
 !s110 1744934616
 Vh<9:d?eK64Y<3X=Fg0@6R2
@@ -39,7 +40,7 @@ n@_opt2
 R3
 R0
 vALU
-Z4 !s110 1744935746
+Z4 !s110 1744940335
 !i10b 1
 !s100 EOBTO8Xm_71E[KC19_kd92
 Z5 !s11b Dg1SIo80bB@j0V0VzS_@n1
@@ -48,14 +49,14 @@ Z6 dD:/Verilog/RISCV
 w1744188953
 8ALU.v
 FALU.v
-!i122 707
+!i122 757
 L0 1 26
 Z7 VDg1SIo80bB@j0V0VzS_@n1
 Z8 OL;L;2020.4;71
 r1
 !s85 0
 31
-Z9 !s108 1744935746.000000
+Z9 !s108 1744940335.000000
 Z10 !s107 Hazard_unit.v|Data_Memory.v|ALU.v|Sign_Extend.v|Register_File.v|Main_Decoder.v|ALU_Decoder.v|Control_Unit_Top.v|Instruction_Memory.v|Mux.v|PC_Adder.v|PC.v|Writeback_Stage.v|Mem_Stage.v|Execute_Stage.v|Decode_Stage.v|Fetch_Stage.v|D:/Verilog/RISCV/Pipeline_RISCV.v|
 Z11 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/Verilog/RISCV/Pipeline_RISCV.v|
 !i113 0
@@ -72,7 +73,7 @@ R6
 w1744552904
 8ALU_Decoder.v
 FALU_Decoder.v
-!i122 707
+!i122 757
 L0 1 24
 R7
 R8
@@ -96,7 +97,7 @@ R6
 Z13 w1744476480
 8Control_Unit_Top.v
 FControl_Unit_Top.v
-!i122 707
+!i122 757
 L0 4 31
 R7
 R8
@@ -120,7 +121,7 @@ R6
 w1743425631
 8Data_Memory.v
 FData_Memory.v
-!i122 707
+!i122 757
 Z14 L0 1 23
 R7
 R8
@@ -144,7 +145,7 @@ R6
 w1744538157
 8D:/Verilog/RISCV/Decode_Stage.v
 FD:/Verilog/RISCV/Decode_Stage.v
-!i122 708
+!i122 758
 L0 1 116
 R7
 R8
@@ -159,7 +160,7 @@ R12
 R2
 n@decode_@stage
 vDecode_Stage_tb
-Z15 !s110 1744935747
+R4
 !i10b 1
 !s100 Oc8WijIe8M=z2II;[J<AF1
 R5
@@ -168,14 +169,14 @@ R6
 w1744905520
 8D:/Verilog/RISCV/Decode_Stage_tb.v
 FD:/Verilog/RISCV/Decode_Stage_tb.v
-!i122 714
+!i122 764
 L0 1 127
 R7
 R8
 r1
 !s85 0
 31
-Z16 !s108 1744935747.000000
+R9
 !s107 D:/Verilog/RISCV/Decode_Stage_tb.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/Verilog/RISCV/Decode_Stage_tb.v|
 !i113 0
@@ -192,7 +193,7 @@ R6
 R13
 8D:/Verilog/RISCV/Execute_Stage.v
 FD:/Verilog/RISCV/Execute_Stage.v
-!i122 709
+!i122 759
 L0 1 105
 R7
 R8
@@ -207,7 +208,7 @@ R12
 R2
 n@execute_@stage
 vExecute_Stage_tb
-R15
+Z15 !s110 1744940336
 !i10b 1
 !s100 ZiDK10L7;:JeC?=f;5=jX2
 R5
@@ -216,14 +217,14 @@ R6
 w1744909025
 8D:/Verilog/RISCV/Execute_Stage_tb.v
 FD:/Verilog/RISCV/Execute_Stage_tb.v
-!i122 715
+!i122 765
 L0 1 123
 R7
 R8
 r1
 !s85 0
 31
-R16
+R9
 !s107 D:/Verilog/RISCV/Execute_Stage_tb.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/Verilog/RISCV/Execute_Stage_tb.v|
 !i113 0
@@ -240,7 +241,7 @@ R6
 w1744536156
 8D:/Verilog/RISCV/Fetch_Stage.v
 FD:/Verilog/RISCV/Fetch_Stage.v
-!i122 710
+!i122 760
 L0 1 70
 R7
 R8
@@ -255,7 +256,7 @@ R12
 R2
 n@fetch_@stage
 vFetch_Stage_tb
-R15
+R4
 !i10b 1
 !s100 UE5Emg^W_A_S0]naX<:Y=2
 R5
@@ -264,7 +265,7 @@ R6
 w1744907949
 8D:/Verilog/RISCV/Fetch_Stage_tb.v
 FD:/Verilog/RISCV/Fetch_Stage_tb.v
-!i122 713
+!i122 763
 L0 1 82
 R7
 R8
@@ -288,8 +289,8 @@ R6
 w1744256207
 8Hazard_unit.v
 FHazard_unit.v
-!i122 707
-Z17 L0 1 16
+!i122 757
+Z16 L0 1 16
 R7
 R8
 r1
@@ -304,21 +305,21 @@ R2
 vhazard_unit_tb
 R15
 !i10b 1
-!s100 A_bb1:W7JmUT45@>P9z[d3
+!s100 09bzXf2Jn3WWI<UGZ8VfA3
 R5
-IOYN=n:eWIJ7YRJ<3J^ZT60
+InLYXHnKiik1eoYW1c99YN0
 R6
-w1744935708
+w1744939062
 8D:/Verilog/RISCV/hazard_unit_tb.v
 FD:/Verilog/RISCV/hazard_unit_tb.v
-!i122 718
-L0 1 87
+!i122 768
+L0 1 85
 R7
 R8
 r1
 !s85 0
 31
-R16
+Z17 !s108 1744940336.000000
 !s107 D:/Verilog/RISCV/hazard_unit_tb.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/Verilog/RISCV/hazard_unit_tb.v|
 !i113 0
@@ -334,7 +335,7 @@ R6
 w1744864814
 8Instruction_Memory.v
 FInstruction_Memory.v
-!i122 707
+!i122 757
 L0 1 15
 R7
 R8
@@ -358,7 +359,7 @@ R6
 w1744543408
 8Main_Decoder.v
 FMain_Decoder.v
-!i122 707
+!i122 757
 R14
 R7
 R8
@@ -382,7 +383,7 @@ R6
 R13
 8D:/Verilog/RISCV/Mem_Stage.v
 FD:/Verilog/RISCV/Mem_Stage.v
-!i122 711
+!i122 761
 L0 1 59
 R7
 R8
@@ -406,14 +407,14 @@ R6
 w1744909273
 8D:/Verilog/RISCV/Mem_Stage_tb.v
 FD:/Verilog/RISCV/Mem_Stage_tb.v
-!i122 716
+!i122 766
 L0 1 96
 R7
 R8
 r1
 !s85 0
 31
-R16
+R17
 !s107 D:/Verilog/RISCV/Mem_Stage_tb.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/Verilog/RISCV/Mem_Stage_tb.v|
 !i113 0
@@ -430,7 +431,7 @@ R6
 Z18 w1743425692
 Z19 8Mux.v
 Z20 FMux.v
-!i122 707
+!i122 757
 Z21 L0 1 9
 R7
 R8
@@ -454,7 +455,7 @@ R6
 R18
 R19
 R20
-!i122 707
+!i122 757
 L0 11 8
 R7
 R8
@@ -478,7 +479,7 @@ R6
 w1743425699
 8PC_Adder.v
 FPC_Adder.v
-!i122 707
+!i122 757
 L0 1 8
 R7
 R8
@@ -502,7 +503,7 @@ R6
 w1744181994
 8PC.v
 FPC.v
-!i122 707
+!i122 757
 L0 1 14
 R7
 R8
@@ -526,7 +527,7 @@ R6
 R13
 8D:/Verilog/RISCV/Pipeline_RISCV.v
 FD:/Verilog/RISCV/Pipeline_RISCV.v
-!i122 707
+!i122 757
 L0 18 126
 R7
 R8
@@ -541,7 +542,7 @@ R12
 R2
 n@pipeline_@r@i@s@c@v
 vpipeline_tb
-R4
+!s110 1744940334
 !i10b 1
 !s100 _YkKRLF0F`SYzUKM_LP@O2
 R5
@@ -550,14 +551,14 @@ R6
 w1744911780
 8D:/Verilog/RISCV/pipeline_tb.v
 FD:/Verilog/RISCV/pipeline_tb.v
-!i122 704
+!i122 754
 L0 1 53
 R7
 R8
 r1
 !s85 0
 31
-R9
+!s108 1744940334.000000
 !s107 D:/Verilog/RISCV/pipeline_tb.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/Verilog/RISCV/pipeline_tb.v|
 !i113 0
@@ -573,7 +574,7 @@ R6
 w1743425719
 8Register_File.v
 FRegister_File.v
-!i122 707
+!i122 757
 R14
 R7
 R8
@@ -597,7 +598,7 @@ R6
 w1744539712
 8Sign_Extend.v
 FSign_Extend.v
-!i122 707
+!i122 757
 R21
 R7
 R8
@@ -621,8 +622,8 @@ R6
 w1744899475
 8D:/Verilog/RISCV/Writeback_Stage.v
 FD:/Verilog/RISCV/Writeback_Stage.v
-!i122 712
-R17
+!i122 762
+R16
 R7
 R8
 r1
@@ -645,14 +646,14 @@ R6
 w1744910059
 8D:/Verilog/RISCV/Writeback_Stage_tb.v
 FD:/Verilog/RISCV/Writeback_Stage_tb.v
-!i122 717
+!i122 767
 L0 1 79
 R7
 R8
 r1
 !s85 0
 31
-R16
+R17
 !s107 D:/Verilog/RISCV/Writeback_Stage_tb.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/Verilog/RISCV/Writeback_Stage_tb.v|
 !i113 0
