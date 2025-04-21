@@ -1,4 +1,4 @@
-module hazard_unit(rst, RegWriteM, RegWriteW, RD_M, RD_W, Rs1_E, Rs2_E, ForwardAE, ForwardBE);
+module forwarding_unit(rst, RegWriteM, RegWriteW, RD_M, RD_W, Rs1_E, Rs2_E, ForwardAE, ForwardBE);
 
     // Declaration of I/Os
     input rst, RegWriteM, RegWriteW;

@@ -1,4 +1,4 @@
-module hazard_unit_tb();
+module forwarding_unit_tb();
     // Định nghĩa các tín hiệu test
     reg rst;
     reg RegWriteM, RegWriteW;
@@ -6,7 +6,7 @@ module hazard_unit_tb();
     wire [1:0] ForwardAE, ForwardBE;
 
     // Khởi tạo DUT (Device Under Test)
-    hazard_unit DUT (
+    forwarding_unit DUT (
         .rst(rst),
         .RegWriteM(RegWriteM),
         .RegWriteW(RegWriteW),
@@ -78,8 +78,8 @@ module hazard_unit_tb();
 
     // Tạo file VCD để xem wave
     initial begin
-        $dumpfile("hazard_unit_tb.vcd");
-        $dumpvars(0, hazard_unit_tb);
+        $dumpfile("forwarding_unit_tb.vcd");
+        $dumpvars(0, forwarding_unit_tb);
     end
 
 endmodule

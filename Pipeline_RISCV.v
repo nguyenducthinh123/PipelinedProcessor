@@ -12,7 +12,7 @@
 `include "Sign_Extend.v"
 `include "ALU.v"
 `include "Data_Memory.v"
-`include "Hazard_unit.v"
+`include "Forwarding_unit.v"
 
 
 module Pipeline_RISCV(clk, rst);
@@ -128,8 +128,8 @@ module Pipeline_RISCV(clk, rst);
                         .ResultW(ResultW)
                     );
 
-    // Hazard Unit
-    hazard_unit Forwarding_block (
+    // Forwarding Unit
+    forwarding_unit Forwarding_block (
                         .rst(rst), 
                         .RegWriteM(RegWriteM), 
                         .RegWriteW(RegWriteW), 
