@@ -1,14 +1,13 @@
-module PC_Module(clk,rst,PC,PC_Next);
-    input clk,rst;
-    input [31:0]PC_Next;
-    output [31:0]PC;
-    reg [31:0]PC;
+module PC_Module(clk, rst, PCWrite, PC_Next, PC);
+    input clk, rst, PCWrite;
+    input [31:0] PC_Next;
+    output reg [31:0] PC;
 
-    always @(posedge clk)
-    begin
-        if(rst == 1'b0)
-            PC <= {32{1'b0}};
-        else
+    always @(posedge clk) begin
+        if (!rst)
+            PC <= 32'b0;
+        else if (PCWrite)
             PC <= PC_Next;
+        // else giữ nguyên PC (stall)
     end
 endmodule
