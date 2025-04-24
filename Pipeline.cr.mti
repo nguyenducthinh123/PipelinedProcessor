@@ -1,4 +1,4 @@
-D:/Verilog/RISCV/Forwarding_unit.v {1 {vlog -work work -vopt -stats=none {D:\Verilog\RISCV\Forwarding_unit.v}
+D:/Verilog/RISCV/Forwarding_unit.v {1 {vlog -work work -vopt -stats=none D:/Verilog/RISCV/Forwarding_unit.v
 Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
 -- Compiling module forwarding_unit
 
@@ -49,13 +49,6 @@ Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
 Top level modules:
 	Execute_Stage_tb
 
-} {} {}} D:/Verilog/RISCV/Hazard_detection_unit_tb.v {1 {vlog -work work -vopt -stats=none D:/Verilog/RISCV/Hazard_detection_unit_tb.v
-Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
--- Compiling module Hazard_detection_unit_tb
-
-Top level modules:
-	Hazard_detection_unit_tb
-
 } {} {}} D:/Verilog/RISCV/Pipeline_RISCV.v {1 {vlog -work work -vopt -stats=none D:/Verilog/RISCV/Pipeline_RISCV.v
 Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
 -- Compiling module Fetch_Stage
@@ -76,10 +69,18 @@ Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
 -- Compiling module ALU
 -- Compiling module Data_Memory
 -- Compiling module forwarding_unit
+-- Compiling module Hazard_detection_unit
 -- Compiling module Pipeline_RISCV
 
 Top level modules:
 	Pipeline_RISCV
+
+} {} {}} D:/Verilog/RISCV/Hazard_detection_unit_tb.v {1 {vlog -work work -vopt -stats=none D:/Verilog/RISCV/Hazard_detection_unit_tb.v
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module Hazard_detection_unit_tb
+
+Top level modules:
+	Hazard_detection_unit_tb
 
 } {} {}} D:/Verilog/RISCV/Writeback_Stage_tb.v {1 {vlog -work work -vopt -stats=none D:/Verilog/RISCV/Writeback_Stage_tb.v
 Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
@@ -173,6 +174,13 @@ Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
 
 Top level modules:
 	pipeline_tb
+
+} {} {}} D:/Verilog/RISCV/Decode_Stage_tb.v {1 {vlog -work work -vopt -stats=none D:/Verilog/RISCV/Decode_Stage_tb.v
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module Decode_Stage_tb
+
+Top level modules:
+	Decode_Stage_tb
 
 } {} {}} D:/Verilog/RISCV/Fetch_Stage.v {1 {vlog -work work -vopt -stats=none D:/Verilog/RISCV/Fetch_Stage.v
 Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020

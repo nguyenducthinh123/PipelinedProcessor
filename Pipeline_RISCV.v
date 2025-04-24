@@ -13,7 +13,7 @@
 `include "ALU.v"
 `include "Data_Memory.v"
 `include "Forwarding_unit.v"
-
+`include "Hazard_detection_unit.v"
 
 module Pipeline_RISCV(clk, rst);
 
@@ -29,6 +29,8 @@ module Pipeline_RISCV(clk, rst);
     wire [4:0] RS1_E, RS2_E;
     wire [1:0] ForwardBE, ForwardAE;
     
+    // Hazard Detection Unit Wires
+    wire MemReadE, IF_ID_Write, PCWrite, FlushE;
 
     // Module Initiation
     // Fetch Stage
@@ -39,7 +41,9 @@ module Pipeline_RISCV(clk, rst);
                         .PCTargetE(PCTargetE), 
                         .InstrD(InstrD), 
                         .PCD(PCD), 
-                        .PCPlus4D(PCPlus4D)
+                        .PCPlus4D(PCPlus4D),
+                        .PCWrite(PCWrite),
+                        .IF_ID_Write(IF_ID_Write)
                     );
 
     // Decode Stage
@@ -65,7 +69,9 @@ module Pipeline_RISCV(clk, rst);
                         .PCE(PCE), 
                         .PCPlus4E(PCPlus4E),
                         .RS1_E(RS1_E),
-                        .RS2_E(RS2_E)
+                        .RS2_E(RS2_E),
+                        .Flush(FlushE),
+                        .MemReadE(MemReadE)
                     );
 
     // Execute Stage
@@ -127,6 +133,17 @@ module Pipeline_RISCV(clk, rst);
                         .ReadDataW(ReadDataW), 
                         .ResultW(ResultW)
                     );
+
+    // Hazard Detection Unit
+    Hazard_detection_unit hazard_detection_unit (
+        .MemReadE(MemReadE),
+        .RD_E(RD_E),
+        .Rs1_D(InstrD[19:15]),
+        .Rs2_D(InstrD[24:20]),
+        .PCWrite(PCWrite),
+        .IF_ID_Write(IF_ID_Write),
+        .FlushE(FlushE)
+    );
 
     // Forwarding Unit
     forwarding_unit Forwarding_block (
